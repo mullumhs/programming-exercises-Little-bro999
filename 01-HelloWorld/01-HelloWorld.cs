@@ -13,7 +13,8 @@ Main Tasks:
 
 Questions:
 1. What is the difference between input and output?
-
+input is a human giving a command
+output is the computer preforms
 Extension Tasks:
 1. Output another message / pause after the ReadLine.
 2. Research online how to change the colour and/or make the console beep.
@@ -31,7 +32,12 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-
+            Console.WriteLine("hello world");
+            Console.ReadLine();
+            Console.WriteLine("goodbye world");
+            Console.ReadLine();
+            Console.Beep(50,5);
+            Console.ReadLine();
         }
     }
 }

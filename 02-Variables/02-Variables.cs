@@ -15,7 +15,8 @@ Main Tasks:
 Questions:
 1. What is a variable?
 2. What is a string?
-
+A Variable is a value that can change
+A string is a sequence of characters that can repeat easily 
 Extension Tasks:
 1. Try creating two string variables and using them in the same message.
 2. Use Google to work out how to change a variable to uppercase or lowercase before outputting it.
@@ -34,7 +35,9 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Your code goes below here
-            
+            string name = "Elia";
+            Console.WriteLine("hello " + name);
+            Console.ReadLine();
 
         }
     }
