@@ -16,7 +16,7 @@ Main Tasks:
 Questions:
 1. What does assignment mean? What is the assignment operator?
 2. Explain what Console.ReadLine() does.
-
+console.readline makes it so thatyou can put in a command before it reads it
 Extension Tasks:
 1. Ask for multiple inputs.
 2. Research how to input a type other than string.
