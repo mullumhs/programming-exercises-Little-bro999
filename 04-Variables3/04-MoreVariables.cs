@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Remoting.Channels;
 
 /*
 ===============================================================================
@@ -14,8 +15,9 @@ Main Tasks:
 
 Questions:
 1. Why were the words "year", "country", and "population" originally underlined?
+becuase they didnt have any code or meaning for them
 2. What is the purpose of the dollar sign ($) before the double quotes in the final message?
-
+becuase if you dont have it they have {} around year, country and population
 Extension Tasks:
 1. Print out another statement using three or more new variables of different data types.
 2. Find out how to include "double quotes" in a string using an "escape character".
@@ -37,6 +39,9 @@ namespace ProgrammingExercisesIST
         {
             // Your code goes below here
 
+            int year = 2023;
+            double population = 8.045311447;
+            string country = "the world";
 
             // Do not edit below this line
             Console.WriteLine($"As of {year} the population of {country} was {population} billion.");
