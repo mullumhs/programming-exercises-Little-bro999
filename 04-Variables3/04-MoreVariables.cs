@@ -19,8 +19,8 @@ becuase they didnt have any code or meaning for them
 2. What is the purpose of the dollar sign ($) before the double quotes in the final message?
 becuase if you dont have it they have {} around year, country and population
 Extension Tasks:
-1. Print out another statement using three or more new variables of different data types.
-2. Find out how to include "double quotes" in a string using an "escape character".
+1. Print out another statement using three or more new variables of different data types. done
+2. Find out how to include "double quotes" in a string using an "escape character".  
 3. Find out how to round down or change the display format of a number using ".ToString()".        
 
 Additional Resources:
@@ -41,10 +41,10 @@ namespace ProgrammingExercisesIST
 
             int year = 2023;
             double population = 8.045311447;
-            string country = "the world";
+            string country = "america";
 
             // Do not edit below this line
-            Console.WriteLine($"As of {year} the population of {country} was {population} billion.");
+            Console.WriteLine($"i entered the {year} hotdog eating contest in {country} and got the new record by {population}.");
             Console.ReadLine();
         }
     }
