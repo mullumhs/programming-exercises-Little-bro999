@@ -16,7 +16,9 @@ Main Tasks:
 
 Questions:
 1. What does "Convert.ToDouble" do?
+Converts the value of the specified object to an double precision
 2. What is a parameter? Give an example of where you have used one.
+
 3. Why is the 'Console.ReadLine()' a parameter to Convert.ToDouble()?
 
 Extension Tasks:
@@ -53,7 +55,24 @@ namespace ProgrammingExercisesIST
             double x = Convert.ToDouble(Console.ReadLine());
 
             // Your code goes below here
+            Console.WriteLine("Please enter a number for Y");
+            double y = Convert.ToDouble(Console.ReadLine());
 
+            // add
+            Console.WriteLine($"{x} plus {y} = {x + y}");
+            Console.ReadLine();
+
+            // minus
+            Console.WriteLine($"{x} minus {y} = {x - y}");
+            Console.ReadLine();
+
+            // multiplication
+            Console.WriteLine($"{x} times {y} = {x * y}");
+            Console.ReadLine();
+
+            // division
+            Console.WriteLine($"{x} divided by {y} = {Math.Floor(x / y)} and the remainder is {y % x}");
+            Console.ReadLine();
         }
     }
 }
