@@ -53,7 +53,47 @@ namespace ProgrammingExercisesIST
             int mark = Convert.ToInt32(Console.ReadLine());
 
             // Your code goes below here
+            if (mark <= 15)
+            {
+                Console.WriteLine("Bloody idiot F");
+            }
+            else if (mark <= 40)
+            {
+                Console.WriteLine("yikes that is quite trash E");
+            }
 
+            else if (mark <= 59)
+            {
+                Console.WriteLine("L so close to passing D");
+            }
+
+            else if (mark <= 60) 
+            {
+                Console.WriteLine("You passed but just barely C");             
+            }
+            else if (mark <= 79)
+            {
+                Console.WriteLine("You passed but just barely C");
+            }
+            else if (mark <= 80)
+            {
+                Console.WriteLine("you know thats not that bad B");
+            }
+            else if (mark <= 89)
+            {
+                Console.WriteLine("you know thats not that bad B");
+            }
+            else if (mark <= 90)
+            {
+                Console.WriteLine("really well done A");
+            }
+            else if (mark <= 100)
+            {
+                Console.WriteLine("really well done A");
+            }
+           
+            // 
+            Console.ReadLine();
         }
     }
 }
