@@ -18,8 +18,9 @@ Questions:
 1. What does "Convert.ToDouble" do?
 Converts the value of the specified object to an double precision
 2. What is a parameter? Give an example of where you have used one.
-
+act as variables inside the method i used 1 with the double
 3. Why is the 'Console.ReadLine()' a parameter to Convert.ToDouble()?
+it doubles it... i think
 
 Extension Tasks:
 1. Modify the program to work with the 'double' type.
