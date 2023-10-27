@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 
 /*
 ===============================================================================
@@ -15,6 +16,7 @@ Main Tasks:
 
 Questions:
 1. What is the purpose of the final ELSE statement in this program?
+i didnt use else in this?
 2. What is the difference between the = operator and the == operator?
 
 Extension Tasks:
@@ -43,10 +45,71 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Ask the user to pick a door
-            Console.WriteLine("Pick a Door: 1, 2 or 3");
+            Console.WriteLine("Pick a Door: 1 - 10");
 
             // Your code goes below here
+             int Door = (Convert.ToInt32(Console.ReadLine())); 
 
+            if (Door == 1) 
+            {
+                Console.WriteLine("HAHAHAA YOU LOSER!!!");
+            }
+            
+            if (Door == 3)
+            {
+                Console.WriteLine("HAHAHAA YOU LOSER!!!");
+            }
+
+            if (Door == 7)
+            {
+                Console.WriteLine("OMG CONGRATULATIONS YOU WON A CAR!!!");
+            }
+
+            if (Door == 4)
+            {
+                Console.WriteLine("HAHAHAA YOU LOSER!!!");
+            }
+
+            if (Door == 5)
+            {
+                Console.WriteLine("HAHAHAA YOU LOSER!!!");
+            }
+
+            if (Door == 6)
+            {
+                Console.WriteLine("HAHAHAA YOU LOSER!!!");
+            }
+
+            if (Door == 2)
+            {
+                Console.WriteLine("HAHAHAA YOU LOSER!!!");
+            }
+
+            if (Door == 8)
+            {
+                Console.WriteLine("HAHAHAA YOU LOSER!!!");
+            }
+
+            if (Door == 9)
+            {
+                Console.WriteLine("HAHAHAA YOU LOSER!!!");
+            }
+
+            if (Door == 10)
+            {
+                Console.WriteLine("HAHAHAA YOU LOSER!!!");
+            }
+
+
+
+
+
+
+
+
+
+            //
+            Console.ReadLine();
         }
     }
 }
