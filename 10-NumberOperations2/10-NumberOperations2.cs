@@ -18,7 +18,8 @@ Questions:
 one reads the line and the other reads something else
 
 2. Why is the choice stored as a string instead of an integer?
-becuse integer can only do numbers
+becuse integer can only do 
+numbers
 
 Extension Tasks:
 1. Research online to learn how to perform exponentiation, e.g., X to the power of Y.
