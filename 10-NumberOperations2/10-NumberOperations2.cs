@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.Eventing.Reader;
 
 /*
 ===============================================================================
@@ -14,7 +15,10 @@ Main Tasks:
 
 Questions:
 1. What is the difference between Console.ReadLine() and Console.ReadKey()?
+one reads the line and the other reads something else
+
 2. Why is the choice stored as a string instead of an integer?
+becuse integer can only do numbers
 
 Extension Tasks:
 1. Research online to learn how to perform exponentiation, e.g., X to the power of Y.
@@ -52,8 +56,32 @@ namespace ProgrammingExercisesIST
     {
         static void Main(string[] args)
         {
-            // Your code goes below here
+            
+            Console.WriteLine("Please enter a number for X:");
+            double x = Convert.ToDouble(Console.ReadLine());
 
+            
+            Console.WriteLine("Please enter a number for Y");
+            double y = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("what operation would you like to do?");
+            Console.WriteLine("1. plus");
+            Console.WriteLine("2. minus");
+
+            string Operation = Console.ReadLine();
+
+            if (Operation == "1")
+
+            {
+                Console.WriteLine($"{x} plus {y} = {x + y}"); 
+            }
+            
+            else if (Operation == "2")
+            
+            {
+                Console.WriteLine($"{x} minus {y} = {x - y}");
+            }
+            Console.ReadLine();
 
             // Wait for any key before exiting
             Console.WriteLine();
