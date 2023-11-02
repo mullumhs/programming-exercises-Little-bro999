@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Diagnostics.Eventing.Reader;
+using System.Runtime.Remoting.Channels;
+using System.Runtime.Remoting.Services;
 
 /*
 ===============================================================================
@@ -49,8 +52,49 @@ namespace ProgrammingExercisesIST
     {
         static void Main(string[] args)
         {
-            // Your code goes below here
 
+        
+
+           
+            // Your code goes below here
+            Console.WriteLine("choose an option");
+            Console.WriteLine("1. area of a circle");
+            Console.WriteLine("2. area of a rectangle");
+            Console.WriteLine("3. area of a triangle");
+
+            string choice = Console.ReadLine();
+
+            if (choice == "1")
+            {
+                Console.WriteLine("Enter Radius: ");
+                double Radius = Convert.ToDouble(Console.ReadLine());
+                double area = Math.PI * Math.Pow(Radius, 2);
+                Console.WriteLine($"the area of this circle is {area}");
+
+            }
+            else if (choice == "2")
+            {
+                Console.WriteLine("enter Width");
+                double Width = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("enter Height");
+                double Height = Convert.ToDouble(Console.ReadLine());
+                double area = Width * Height;
+                Console.WriteLine($"the are of this rectangle is {area}") ;
+
+
+            }
+              else if (choice == "3")
+
+            {
+                Console.WriteLine("enter Base");
+                double Base = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("enter Height");
+                double Height = Convert.ToDouble (Console.ReadLine());
+                double area = .5 * Base * Height;
+                Console.WriteLine($"the area of this triangle is {area}");
+
+            }
+            Console.ReadLine();
         }
     }
 }
