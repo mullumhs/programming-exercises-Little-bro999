@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-HelloWorld", "01-HelloWorld\01-HelloWorld.csproj", "{A76DCC82-1C1E-46C5-BB83-91EFC04841B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-HelloWorld", "01-HelloWorld\13-HelloWorld.csproj", "{A76DCC82-1C1E-46C5-BB83-91EFC04841B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-Variables", "02-Variables\02-Variables.csproj", "{42DEB24D-4031-46C6-B07E-84DE1DA0ABCC}"
 EndProject
@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-AreaCalculator", "11-Are
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-BetterAreaCalculator", "12-BetterAreaCalculator\12-BetterAreaCalculator.csproj", "{4B9E868C-34C6-4303-8563-B890B9CE48EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-Methods", "13-Subroutines\13-Methods.csproj", "{15EDABA1-5735-4B26-9DAC-68CB89828549}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Methods", "13-Subroutines\01-Methods.csproj", "{15EDABA1-5735-4B26-9DAC-68CB89828549}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14-Parameters", "14-Parameters\14-Parameters.csproj", "{B8C47301-0103-42ED-8370-F8FAAF46DB24}"
 EndProject
