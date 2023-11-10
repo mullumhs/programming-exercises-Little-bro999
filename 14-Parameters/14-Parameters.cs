@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Net;
 
 /*
 ===============================================================================
@@ -47,10 +49,38 @@ namespace ProgrammingExercisesIST
         static void Main(string[] args)
         {
             // Call the methods here, passing in the required arguments
+            Console.WriteLine("number 1");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("number 2");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("what is your name");
+            string name = Console.ReadLine();
+            sayhello(name);
+            SubtractNumbers(num1, num2);
+            exit();
 
+
+
+   
+            
         }
 
         // Write your methods including parameters here
+        static void sayhello(string name)
+        {
+            Console.WriteLine($"hello{name}");
+        }
+
+        static void exit()
+        { 
+        Console.ReadKey();
+        }
+        static void SubtractNumbers(double num1, double num2)
+        { 
+        double answer = num1 - num2;
+            Console.WriteLine($"{num1} minus {num2} = {answer}");
+        }
+
 
     }
 }
