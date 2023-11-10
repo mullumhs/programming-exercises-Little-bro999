@@ -36,7 +36,7 @@ namespace ProgrammingExercisesIST
             Console.ReadLine();
             Console.WriteLine("goodbye world");
             Console.ReadLine();
-            Console.Beep(50,5);
+            Console.Beep(5000, 12346);
             Console.ReadLine();
         }
     }
