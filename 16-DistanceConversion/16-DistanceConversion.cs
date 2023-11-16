@@ -53,12 +53,18 @@ namespace ProgrammingExercisesIST
             // Write your code here
             if (choice == "1")
             {
-              ConvertKMtoMiles();
+
+                double KM = GetDistance("KM");
+                double Miles = ConvertKMtoMiles(KM);
+                Console.WriteLine(Miles);
+
             }
 
-            if (choice == "2")
+            else if (choice == "2")
             {
-              ConvertMilesToKM();
+                double Miles = GetDistance("Miles");
+                double KM = ConvertMilesToKM(Miles);
+                Console.WriteLine(KM);
             }
 
             // Wait for key press before exiting
@@ -70,19 +76,20 @@ namespace ProgrammingExercisesIST
         // Create your functions here
         private static double ConvertKMtoMiles (double KM)
         {
-           double Miles 
+
+            return KM / 1.6;
         }
 
         private static double ConvertMilesToKM (double Miles)
         {
-            double KM
+            return Miles * 1.6;
         }
 
         // Asks the user to enter a distance in the unit specified
         private static double GetDistance(string unit)
         {
             Console.Write($"Enter distance (in {unit}) to convert: ");
-            double distance = int.Parse(Console.ReadLine());
+            double distance = double.Parse(Console.ReadLine());
             return distance;
         }
 
