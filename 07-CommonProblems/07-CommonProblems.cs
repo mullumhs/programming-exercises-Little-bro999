@@ -32,9 +32,9 @@ namespace ProgrammingExercisesIST
     {
         static void Main(string[] args)
         {
-            string my name = "Jeff";
-            Console.ReadLine(My name is + my name);
-            Console.WriteLine()
+            string name = "Jeff";
+            Console.WriteLine($"My name is + {name}");
+            Console.ReadLine();
         {
     }
 }
