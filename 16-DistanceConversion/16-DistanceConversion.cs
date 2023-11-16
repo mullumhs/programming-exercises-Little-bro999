@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 /*
 ===============================================================================
@@ -50,15 +51,32 @@ namespace ProgrammingExercisesIST
             string choice = MainMenu();
 
             // Write your code here
+            if (choice == "1")
+            {
+              ConvertKMtoMiles();
+            }
 
+            if (choice == "2")
+            {
+              ConvertMilesToKM();
+            }
 
             // Wait for key press before exiting
             WaitForKeyPress();
         }
 
+        
+
         // Create your functions here
+        private static double ConvertKMtoMiles (double KM)
+        {
+           double Miles 
+        }
 
-
+        private static double ConvertMilesToKM (double Miles)
+        {
+            double KM
+        }
 
         // Asks the user to enter a distance in the unit specified
         private static double GetDistance(string unit)
