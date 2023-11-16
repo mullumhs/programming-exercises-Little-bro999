@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Runtime.Remoting.Messaging;
+using System.Security.Cryptography.X509Certificates;
 
 /*
 ===============================================================================
@@ -63,19 +65,25 @@ namespace ProgrammingExercisesIST
     {
         static void Main(string[] args)
         {
-            // Get two numbers from the user
             int x = GetNumber();
             int y = GetNumber();
 
             // Write your code here
 
-            
+
+            Console.WriteLine($"{x} plus {y} = {x + y}");
+            Console.WriteLine($"{x} times {y} = {x * y}");
 
             // "Exit" method is called here
             Exit();
         }
 
         // Create your functions here
+        private static int MultiplyNumbers(int x , int y ) 
+        {
+            return x * y; 
+           
+        }
 
 
 
