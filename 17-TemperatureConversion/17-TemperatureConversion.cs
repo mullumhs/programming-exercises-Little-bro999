@@ -71,11 +71,81 @@ namespace ProgrammingExercisesIST
     {
         static void Main(string[] args)
         {
-            // Write your code here
+            string choice = MainMenu();
 
+            if (choice == "1")
+            {
+
+                double C = GetTemperature("C"); 
+                double F = ConvertCtoF(C);
+                Console.WriteLine(F);
+
+            }
+
+            else if (choice == "2")
+            {
+                double F = GetTemperature("F");
+                double C = ConvertFtoC(F);
+                Console.WriteLine(C);
+            }
+
+            // Wait for key press before exiting
+            WaitForKeyPress();
+        }
+
+
+        // Create your functions here
+        private static double ConvertCtoF(double C)
+        {
+
+            return C * 9/5 + 32;
+        }
+
+        private static double ConvertFtoC(double F)
+        {
+            return (F - 32) * 5/9;
+        }
+
+        // Asks the user to enter a distance in the unit specified
+        private static double GetTemperature(string unit)
+        {
+            Console.Write($"Enter Temperature (in {unit}) to convert: ");
+            double distance = double.Parse(Console.ReadLine());
+            return distance;
+        }
+
+        // Shows the menu options to the user
+        private static string MainMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("What would you like to do?");
+            Console.WriteLine("1. Celcius to Farenheit");
+            Console.WriteLine("2. Farenheit to Celcius");
+            string choice = Console.ReadLine();
+            return choice;
+        }
+
+        // Waits for the user to press any key
+        private static void WaitForKeyPress()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+        }
+
+        // Displays an error message in red text
+        private static void ErrorMessage(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(message);
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }
+
+        
+    
+
 
 /*
 ===============================================================================
